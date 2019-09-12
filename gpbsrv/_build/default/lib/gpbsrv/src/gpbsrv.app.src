@@ -1,0 +1,30 @@
+{application, gpbsrv,
+ [{description, "ProtoBuf based DB interface application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {gpbsrv_app, []}},
+  {applications,
+     [kernel,
+      stdlib,
+      crypto,
+      public_key,
+      ssl,
+      xmerl,
+      inets,
+      jsx,
+      eini,
+      base16,
+      lhttpc,
+      erlcloud
+   ]},
+  {env,[
+      {server_port, 9876},
+      {db_tablename, "challenge"},
+      {kms_aliasname, "alias/challenge"}
+   ]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

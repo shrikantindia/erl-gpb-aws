@@ -1,0 +1,12 @@
+{application,gpbcl,
+             [{description,"An OTP application"},
+              {vsn,"0.1.0"},
+              {registered,[]},
+              {mod,{gpbcl_app,[]}},
+              {applications,[kernel,stdlib]},
+              {env,[{server_ip,{127,0,0,1}},{server_port,9876}]},
+              {modules,[client_test,gpb_def,gpbcl,gpbcl_app,gpbcl_srv,
+                        gpbcl_sup]},
+              {maintainers,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.

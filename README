@@ -1,0 +1,14 @@
+The erlang & rebar3 are required to run the service.
+
+In this task, the server is broadly divided into three kind of tasks -
+ - Client-Server interaction - TCP Engine
+ - Processing of messages - Handler
+ - AWS services interaction - AWS Engine
+
+The client contains API
+gpbcl:set_request(<KEY NAME>, <VALUE>)
+gpbcl:get_request(<KEY NAME>)
+
+Erlcloud library is used to interact with the AWS service.
+
+Separate README files are present for server and client.

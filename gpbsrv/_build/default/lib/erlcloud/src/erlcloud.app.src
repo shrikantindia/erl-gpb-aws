@@ -1,0 +1,11 @@
+{application,erlcloud,
+             [{description,"AWS APIs library for Erlang"},
+              {vsn,"3.2.1"},
+              {registered,[]},
+              {applications,[stdlib,kernel,crypto,public_key,ssl,xmerl,inets,
+                             jsx,eini,base16,lhttpc]},
+              {modules,[]},
+              {env,[]},
+              {licenses,["MIT"]},
+              {links,[{"Github","https://github.com/erlcloud/erlcloud"}]},
+              {maintainers,[]}]}.
